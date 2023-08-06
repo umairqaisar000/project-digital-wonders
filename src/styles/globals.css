@@ -5,6 +5,4 @@
 html,
 body {
     background-color: var(--primary-100);
-    margin-left: var(--space-4);
-    margin-right: var(--space-4);
 }
