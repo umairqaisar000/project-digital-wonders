@@ -5,6 +5,8 @@
 
 .navbar-container {
     display: flex;
+    margin-left: var(--space-4);
+    margin-right: var(--space-4);
 }
 
 .navbar-container-background {
@@ -35,7 +37,7 @@
 }
 
 .auth-button-active {
-    background-color: var(--secondary-100);;
+    background-color: var(--secondary-100);
     color: var(--secondary-200);
     border-radius: 50px;
     padding: 12px 36px;
@@ -46,7 +48,7 @@
     line-height: normal;
 }
 
-.active-nav-item{
+.active-nav-item {
     border-bottom: 2px solid var(--secondary-100);
     padding-top: 10px;
     padding-bottom: 10px;
