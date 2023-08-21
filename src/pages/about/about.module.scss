@@ -1,12 +1,12 @@
-.hero-section{
-    background: #F2F5F7;
+.hero-section {
+    background: #f2f5f7;
     padding-top: 66px;
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    p{
+    p {
         color: #000;
         text-align: center;
         font-family: Work Sans;
@@ -17,11 +17,11 @@
         letter-spacing: 6px;
     }
 
-    button{
+    button {
         width: 352px;
         height: 67px;
         margin-top: 47px;
-        background: #FFC963;
+        background: #ffc963;
         padding-top: 20px;
         padding-bottom: 20px;
         padding-left: 53px;
@@ -34,22 +34,22 @@
         line-height: normal;
     }
 
-    .hero-image{
+    .hero-image {
         margin-top: 99px;
         width: 800px;
         height: 504px;
     }
 }
 
-.our-story{
+.our-story {
     padding-left: 106px;
     padding-right: 85px;
     padding-bottom: 90px;
     display: flex;
     flex-direction: row;
-    .our-story-left{
-        .heading{
-            color: #67C71C;
+    .our-story-left {
+        .heading {
+            color: #67c71c;
             font-family: Work Sans;
             font-size: 39px;
             font-style: normal;
@@ -58,24 +58,24 @@
             letter-spacing: -1.56px;
             padding-top: 89px;
         }
-        .text1{
+        .text1 {
             color: #151515;
             font-family: Work Sans;
             font-size: 39px;
             font-style: normal;
             font-weight: 600;
-            line-height: 58px; 
+            line-height: 58px;
             letter-spacing: -1.56px;
             width: 526px;
             height: 177px;
             flex-shrink: 0;
         }
-        .our-story-image{
+        .our-story-image {
             width: 337px;
             height: 303px;
             flex-shrink: 0;
         }
-        .text2{
+        .text2 {
             color: #484646;
             font-family: Work Sans;
             font-size: 20px;
@@ -87,14 +87,14 @@
             flex-shrink: 0;
         }
     }
-    .our-story-right{
+    .our-story-right {
         padding-top: 169px;
-        padding-left: 140px;
-        .heading{
+        padding-left: 30%;
+        .heading {
             display: flex;
             flex-direction: row;
-            .number{
-                color: #6C6C6C;
+            .number {
+                color: #6c6c6c;
                 font-family: Work Sans;
                 font-size: 30px;
                 font-style: normal;
@@ -105,7 +105,7 @@
                 height: 41px;
                 flex-shrink: 0;
             }
-            .text{
+            .text {
                 padding-left: 12px;
                 color: #151515;
                 font-family: Work Sans;
@@ -116,7 +116,7 @@
                 letter-spacing: -1.36px;
             }
         }
-        .content{
+        .content {
             padding-left: 100px;
             color: #484646;
             font-family: Work Sans;
@@ -130,14 +130,14 @@
     }
 }
 
-.our-mission{
+.our-mission {
     display: flex;
     flex-direction: row;
-    background: #F2F5F7;
+    background: #f2f5f7;
     padding-top: 77px;
     padding-left: 80px;
     padding-bottom: 150px;
-    .heading{
+    .heading {
         color: #060606;
         font-family: Work Sans;
         font-size: 65px;
@@ -146,7 +146,7 @@
         line-height: normal;
         letter-spacing: 2.6px;
     }
-    .text{
+    .text {
         padding-left: 7px;
         color: #484646;
         font-family: Work Sans;
@@ -157,21 +157,21 @@
         width: 718px;
         flex-shrink: 0;
     }
-    .our-mission-image{
-        margin-left: 102px;
+    .our-mission-image {
+        margin-left: 30%;
         padding-right: 50px;
         width: 485px;
-        height: 497px;  
+        height: 497px;
     }
 }
 
-.team{
-    background: #FFF;
+.team {
+    background: #fff;
     padding-left: 112px;
     padding-right: 115px;
     padding-top: 69px;
     padding-bottom: 127px;
-    .heading{
+    .heading {
         width: 785px;
         height: 78px;
         color: #060606;
@@ -181,12 +181,12 @@
         font-weight: 700;
         line-height: normal;
         letter-spacing: 2px;
-        .team{
-            color: #55A847;
+        .team {
+            color: #55a847;
             padding: 0;
         }
     }
-    .card{
+    .card {
         display: flex;
         flex-direction: row;
         justify-content: space-between;

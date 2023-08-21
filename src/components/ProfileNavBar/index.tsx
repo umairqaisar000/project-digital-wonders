@@ -174,6 +174,7 @@ export default function ProfileNavBar() {
           <Typography
             noWrap
             component="div"
+            onClick={() => router.push("/howItWorks")}
             sx={{
               display: { xs: "none", sm: "block", color: "#893232" },
               marginRight: "10px",

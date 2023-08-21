@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import styles from "./Navbar.module.scss";
 import CompanyLogo from "src/assets/images/company-logo.svg";
+import SignInModal from "../SignInModal"; // Adjust the path as needed
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -12,15 +13,31 @@ interface NavbarProps {
 const navbarContent = [
   { id: 1, label: "Home", path: "/home" },
   { id: 2, label: "Service", path: "service-section" },
-  { id: 3, label: "About", path: "about" },
+  { id: 3, label: "About", path: "/about" },
   { id: 4, label: "Contact", path: "/contact" },
   { id: 5, label: "How to Works", path: "/howItWorks" },
 ];
 
 const Navbar: React.FC<NavbarProps> = ({ pathname }) => {
   const router = useRouter();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isLogin, setIsLogin] = useState(false);
   const [navbarItems, setNavbarItems] = useState(navbarContent);
   const [activeSection, setActiveSection] = useState<string>("section1");
+
+  const openModalLogin = () => {
+    setIsModalOpen(true);
+    setIsLogin(true);
+  };
+
+  const openModalSignup = () => {
+    setIsModalOpen(true);
+    setIsLogin(false);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,7 +75,7 @@ const Navbar: React.FC<NavbarProps> = ({ pathname }) => {
       <div className={styles["vl"]}></div>
       <div className={styles["navbar-container-background"]}>
         {navbarItems.map((navItem, index) =>
-          navItem.path === "about" || navItem.path === "service-section" ? (
+          navItem.path === "service-section" ? (
             <div
               key={index}
               onClick={() => scrollToSection(navItem.path)}
@@ -86,9 +103,18 @@ const Navbar: React.FC<NavbarProps> = ({ pathname }) => {
         )}
       </div>
       <div className={styles["button-container"]}>
-        <div className={styles["auth-button"]}>Sign In</div>
-        <div className={styles["auth-button-active"]}>Sign Up</div>
+        <div className={styles["auth-button"]} onClick={openModalLogin}>
+          Sign In
+        </div>
+        <div className={styles["auth-button-active"]} onClick={openModalSignup}>
+          Sign Up
+        </div>
       </div>
+      <SignInModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        isLogin={isLogin}
+      />
     </div>
   );
 };

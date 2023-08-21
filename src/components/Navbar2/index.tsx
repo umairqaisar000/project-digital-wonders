@@ -12,7 +12,7 @@ interface NavbarProps {
 const navbarContent = [
   { id: 1, label: "Home", path: "/home" },
   { id: 2, label: "Service", path: "service-section" },
-  { id: 3, label: "About", path: "about" },
+  { id: 3, label: "About", path: "/about" },
   { id: 4, label: "Contact", path: "/contact" },
   { id: 5, label: "How to Works", path: "/howItWorks" },
 ];
@@ -58,7 +58,7 @@ const Navbar: React.FC<NavbarProps> = ({ pathname }) => {
       <div className={styles["vl"]}></div>
       <div className={styles["navbar-container-background"]}>
         {navbarItems.map((navItem, index) =>
-          navItem.path === "about" || navItem.path === "service-section" ? (
+          navItem.path === "service-section" ? (
             <div
               key={index}
               onClick={() => scrollToSection(navItem.path)}

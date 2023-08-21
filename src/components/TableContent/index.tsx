@@ -137,9 +137,8 @@ export default function TableContent({ taskList }: { taskList: TaskList[] }) {
                           <MoreHorizIcon />
                         </IconButton>
                         <Menu
-                          // anchorEl={anchorElMap[task.taskID]}
-                          // open={Boolean(anchorElMap[task.taskID])}
-                          open={true}
+                          anchorEl={anchorElMap[task.taskID]}
+                          open={Boolean(anchorElMap[task.taskID])}
                           onClose={() => handleCloseMenu(task.taskID)}
                         >
                           <MenuItem

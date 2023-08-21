@@ -54,7 +54,6 @@ const HeroSection = () => {
         src={HeroSectionImage}
         alt="logo"
       />
-
     </div>
   );
 };

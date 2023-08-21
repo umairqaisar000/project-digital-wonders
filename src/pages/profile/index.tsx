@@ -3,7 +3,7 @@ import ProfileNavBar from "src/components/ProfileNavBar";
 import SideInfoBar from "src/components/SideInfoBar";
 import TableContent from "src/components/TableContent";
 import styles from "./Profile.module.scss";
-
+import { useRouter } from "next/router";
 
 interface Task {
   taskID: number;
@@ -67,7 +67,6 @@ export default function Profile() {
   ];
   const [taskList, setTaskList] = useState<Task[]>(tasks);
   const router = useRouter();
-
 
   return (
     <div>
