@@ -41,13 +41,13 @@ const Navbar: React.FC<NavbarProps> = ({ pathname }) => {
     };
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = async (sectionId: string) => {
+    await router.push("/home");
     const targetSection = document.getElementById(sectionId);
     if (targetSection) {
       targetSection.scrollIntoView({ behavior: "smooth" });
     }
   };
-
   return (
     <div className={styles["navbar-container"]}>
       <Image

@@ -4,7 +4,9 @@ import styles from "./Home.module.scss";
 import HeroSection from "../../components/HeroSection";
 import OverviewSection from "../../components/OverviewSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import firstCardImage from "../../assets/images/Group 73.svg";
+import FeedbackCarousel from "src/components/FeedbackCarousel";
+import Footer from "src/components/Footer";
+import WhatCanWeDoSection from "src/components/WhatCanWeDoSection";
 import {
   faCircleCheck,
   faCircleArrowRight,
@@ -13,12 +15,61 @@ import {
 export default function Home() {
   const router = useRouter();
 
+  const testimonials = [
+    {
+      feedback: "Absolutely Incredible Service!",
+      details:
+        "I am thrilled to share my experience... I am thrilled to share my experience...I am thrilled to share my experience...",
+      country: "USA",
+      userName: "JohnDoe",
+    },
+    {
+      feedback: "Absolutely Incredible Service!",
+      details:
+        "I am thrilled to share my experience...I am thrilled to share my experience...I am thrilled to share my experience...I am thrilled to share my experience...",
+      country: "USA",
+      userName: "JohnDoe",
+    },
+    {
+      feedback: "Absolutely Incredible Service!",
+      details:
+        "I am thrilled to share my experience...I am thrilled to share my experience...",
+      country: "USA",
+      userName: "JohnDoe",
+    },
+    {
+      feedback: "Absolutely Incredible Service!",
+      details:
+        "I am thrilled to share my experience... I am thrilled to share my experience...I am thrilled to share my experience...",
+      country: "USA",
+      userName: "JohnDoe",
+    },
+    {
+      feedback: "Absolutely Incredible Service!",
+      details:
+        "I am thrilled to share my experience...I am thrilled to share my experience...I am thrilled to share my experience...I am thrilled to share my experience...",
+      country: "USA",
+      userName: "JohnDoe",
+    },
+    {
+      feedback: "Absolutely Incredible Service!",
+      details:
+        "I am thrilled to share my experience...I am thrilled to share my experience...",
+      country: "USA",
+      userName: "JohnDoe",
+    },
+    // Add more testimonials as needed
+  ];
+
   return (
     <div className={styles["container"]}>
       <Navbar pathname={router.pathname} />
       <HeroSection />
       <OverviewSection />
-      <div className={styles["services-section-container"]}>
+      <div
+        className={styles["services-section-container"]}
+        id="service-section"
+      >
         <div className={styles["services-heading"]}>Services</div>
         <div className={styles["services-sub-heading"]}>
           we are provinding !
@@ -230,7 +281,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles["how-it-work-container"]}>
+      <div className={styles["how-it-work-container"]} id="about">
         <div>
           <span className={styles["how-text"]}>How</span>
           <span className={styles["it-work-text"]}>it Works</span>
@@ -366,6 +417,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <FeedbackCarousel testimonials={testimonials} />
+      <WhatCanWeDoSection />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,195 @@
+.hero-section{
+    background: #F2F5F7;
+    padding-top: 66px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p{
+        color: #000;
+        text-align: center;
+        font-family: Work Sans;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 70px;
+        letter-spacing: 6px;
+    }
+
+    button{
+        width: 352px;
+        height: 67px;
+        margin-top: 47px;
+        background: #FFC963;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 53px;
+        padding-right: 40px;
+        color: #000;
+        font-family: Work Sans;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .hero-image{
+        margin-top: 99px;
+        width: 800px;
+        height: 504px;
+    }
+}
+
+.our-story{
+    padding-left: 106px;
+    padding-right: 85px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: row;
+    .our-story-left{
+        .heading{
+            color: #67C71C;
+            font-family: Work Sans;
+            font-size: 39px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -1.56px;
+            padding-top: 89px;
+        }
+        .text1{
+            color: #151515;
+            font-family: Work Sans;
+            font-size: 39px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 58px; 
+            letter-spacing: -1.56px;
+            width: 526px;
+            height: 177px;
+            flex-shrink: 0;
+        }
+        .our-story-image{
+            width: 337px;
+            height: 303px;
+            flex-shrink: 0;
+        }
+        .text2{
+            color: #484646;
+            font-family: Work Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 35px;
+            width: 504px;
+            height: 148px;
+            flex-shrink: 0;
+        }
+    }
+    .our-story-right{
+        padding-top: 169px;
+        padding-left: 140px;
+        .heading{
+            display: flex;
+            flex-direction: row;
+            .number{
+                color: #6C6C6C;
+                font-family: Work Sans;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 2.1px;
+                width: 65px;
+                height: 41px;
+                flex-shrink: 0;
+            }
+            .text{
+                padding-left: 12px;
+                color: #151515;
+                font-family: Work Sans;
+                font-size: 34px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -1.36px;
+            }
+        }
+        .content{
+            padding-left: 100px;
+            color: #484646;
+            font-family: Work Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 35px; /* 175% */
+            width: 504px;
+            flex-shrink: 0;
+        }
+    }
+}
+
+.our-mission{
+    display: flex;
+    flex-direction: row;
+    background: #F2F5F7;
+    padding-top: 77px;
+    padding-left: 80px;
+    padding-bottom: 150px;
+    .heading{
+        color: #060606;
+        font-family: Work Sans;
+        font-size: 65px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.6px;
+    }
+    .text{
+        padding-left: 7px;
+        color: #484646;
+        font-family: Work Sans;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 54px; /* 216% */
+        width: 718px;
+        flex-shrink: 0;
+    }
+    .our-mission-image{
+        margin-left: 102px;
+        padding-right: 50px;
+        width: 485px;
+        height: 497px;  
+    }
+}
+
+.team{
+    background: #FFF;
+    padding-left: 112px;
+    padding-right: 115px;
+    padding-top: 69px;
+    padding-bottom: 127px;
+    .heading{
+        width: 785px;
+        height: 78px;
+        color: #060606;
+        font-family: Work Sans;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2px;
+        .team{
+            color: #55A847;
+            padding: 0;
+        }
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 130px;
+    }
+}

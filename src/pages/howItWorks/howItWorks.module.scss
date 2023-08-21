@@ -1,0 +1,40 @@
+.container{
+    background: #F2F5F7;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 110px;
+    
+    .content{
+        color: #000;
+        font-family: Work Sans;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -2.4px;
+    }
+    .heading{
+        color: #000;
+        font-family: Work Sans;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 18.9px;
+    }
+    .imageWithText{
+        .card{
+            margin-top: 100px;
+            width: 1266px;
+            height: auto;
+            img{
+                margin-top: 70px;
+                margin-bottom: 70px;
+            }
+        }
+    }
+}

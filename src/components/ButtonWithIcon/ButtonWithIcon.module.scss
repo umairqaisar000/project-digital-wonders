@@ -1,0 +1,17 @@
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+
+    .button-text{
+        padding-right: 16px;
+    }
+
+    .button-icon{
+        transform: rotate(-35.946deg);
+        flex-shrink: 0;
+    }
+}
